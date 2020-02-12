@@ -39,7 +39,7 @@ Create some plots and data tables to present your results.
 ## Instructions
 Begin by downloading the CSV you need to complete the challenge.
 
-Download cryptocurrency data [crypto_data.csv](https://github.com/hbostanchi/Cryptocurrencies/blob/master/crypto_data.csv)Preview the document
+Download cryptocurrency data [crypto_data.csv](https://github.com/hbostanchi/Cryptocurrencies/blob/master/crypto_data.csv)
 
 ### Data Preprocessing
 In this section, you have to load the information about cryptocurrencies from the provided CSV file and perform some data preprocessing tasks. The data was retrieved from CryptoCompare (Links to an external site.).
@@ -62,7 +62,6 @@ Once you have reduced the data dimensions, create a DataFrame named “pcs_df”
 
 You should have a DataFrame like the following:
 
-data-Module-18-Challenge-1-clustering-cryptocurrencies-using-k-means.png
 
 ### Clustering Cryptocurrencies Using K-means
 You’ll use the KMeans algorithm from sklearn (Links to an external site.) to cluster the cryptocurrencies using the PCA data.
