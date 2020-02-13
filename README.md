@@ -16,6 +16,29 @@ Determine the best amount of centroids for K-means using the elbow curve.
 Use PCA to limit features and speed up the model.
 
 ### Supervised vs. Unsupervised Learning
+
+In unsupervised learning, there are two key differences from the above approach:
+
++ There are no paired inputs and outcomes.
++The model uses a whole dataset as input.
+
+Unsupervised learning is used in one of the following two ways:
+
++Transform the data to create an intuitive representation for analysis or to use in another machine learning model; or
++Cluster or determine patterns in a grouping of data, rather than to predict a classification.
+
+## Challenges of Unsupervised Learning
+
+Recall that unsupervised learning does not take in any pairing of input and outcomes from the data—it only looks at the data as a whole. This can cause some challenges when running the algorithm. Since we won’t know the outcome it’s predicting, we might not know that the result is correct.
+
+This can lead to issues where we’re trying to decide if the model has provided any helpful information that we can use to make decisions in the real world. For example, our store owner might run a model that ends up grouping the type of people by how much they’re buying. This could be useful in some contexts—for example, knowing who the top spenders are—but it might not help the store owner better organize the store for maximum purchases per person, or understand the differences in product preferences between top purchasers.
+
+The only way to determine what an unsupervised algorithm did with the data is to go through it manually or create visualizations. Since there will be a manual aspect, unsupervised learning is great for when you want to explore the data. Sometimes you’ll use the information provided to you by the unsupervised algorithm to transition to a more targeted, supervised model.
+
+As with supervised learning, data should be preprocessed into a correct format with only numerical values, null value determination, and so forth. The only difference is unsupervised learning doesn’t have a target variable—it only has input features that will be used to find patterns in the data. It’s important to carefully select features that could help to find those patterns or create groups.
+
+The next section will cover data preprocessing and data munging, and provide a refresher on Pandas and data cleaning. First, you’ll need to install the necessary libraries for practice.
+
 ### Data Preprocessing
 ### Clustering and the K-means Algorithm 
 ### Using the Elbow Curve to Find Centroids 
@@ -73,7 +96,7 @@ Once you define the best value for K, run the K-means algorithm to predict the K
 Create a new DataFrame named “clustered_df,” that includes the following columns: Algorithm, ProofType, TotalCoinsMined, TotalCoinSupply, PC 1, PC 2, PC 3, CoinName, and Class. You should maintain the index of the crypto_df DataFrames as is shown below:
  The DataFrame shows nine columns: Algorithm, ProofType, TotalCoinsMined, TotalCoinSupply, PC1, PC 2, PC 3, CoinName, and Class. It contains ten rows with the following headings: 42, 404, 1337, BTC, ETH, LTC, DASH, XMR, ETC, and ZEC.
 
-### vVisualizing Results
+### Visualizing Results
 You’ll create data visualizations to present the final results.
 
 Complete the following tasks:
