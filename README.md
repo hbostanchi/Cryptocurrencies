@@ -27,7 +27,7 @@ Unsupervised learning is used in one of the following two ways:
 +Transform the data to create an intuitive representation for analysis or to use in another machine learning model; or
 +Cluster or determine patterns in a grouping of data, rather than to predict a classification.
 
-## Challenges of Unsupervised Learning
+### Challenges of Unsupervised Learning
 
 Recall that unsupervised learning does not take in any pairing of input and outcomes from the data—it only looks at the data as a whole. This can cause some challenges when running the algorithm. Since we won’t know the outcome it’s predicting, we might not know that the result is correct.
 
