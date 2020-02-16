@@ -37,8 +37,20 @@ The only way to determine what an unsupervised algorithm did with the data is to
 
 As with supervised learning, data should be preprocessed into a correct format with only numerical values, null value determination, and so forth. The only difference is unsupervised learning doesn’t have a target variable—it only has input features that will be used to find patterns in the data. It’s important to carefully select features that could help to find those patterns or create groups.
 
-The next section will cover data preprocessing and data munging, and provide a refresher on Pandas and data cleaning. First, you’ll need to install the necessary libraries for practice.
+Before moving data to our unsupervised algorithms, complete the following steps for preparing data:
 
+### Data selection
+### Data processing
+### Data transformation
+
+### Clustering is a type of unsupervised learning that groups data points together. This group of data points is called a cluster.
+
+###K-means Algorithm
+K-means is an unsupervised learning algorithm used to identify and solve clustering issues.
+
+K represents how many clusters there will be. These clusters are then determined by the means of all the points that will belong to the cluster.
+
+The K-means algorithm groups the data into K clusters, where belonging to a cluster is based on some similarity or distance measure to a centroid.
 ### Data Preprocessing
 ### Clustering and the K-means Algorithm 
 ### Using the Elbow Curve to Find Centroids 
