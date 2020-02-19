@@ -22,6 +22,19 @@ In unsupervised learning, there are two key differences from the above approach:
 + There are no paired inputs and outcomes.
 + The model uses a whole dataset as input.
 
+### Challenges of Unsupervised Learning
+
+Recall that unsupervised learning does not take in any pairing of input and outcomes from the data—it only looks at the data as a whole. This can cause some challenges when running the algorithm. Since we won’t know the outcome it’s predicting, we might not know that the result is correct.
+
+This can lead to issues where we’re trying to decide if the model has provided any helpful information that we can use to make decisions in the real world. For example, our store owner might run a model that ends up grouping the type of people by how much they’re buying. This could be useful in some contexts—for example, knowing who the top spenders are—but it might not help the store owner better organize the store for maximum purchases per person, or understand the differences in product preferences between top purchasers.
+
+The only way to determine what an unsupervised algorithm did with the data is to go through it manually or create visualizations. Since there will be a manual aspect, unsupervised learning is great for when you want to explore the data. Sometimes you’ll use the information provided to you by the unsupervised algorithm to transition to a more targeted, supervised model.
+
+As with supervised learning, data should be preprocessed into a correct format with only numerical values, null value determination, and so forth. The only difference is unsupervised learning doesn’t have a target variable—it only has input features that will be used to find patterns in the data. It’s important to carefully select features that could help to find those patterns or create groups.
+
+Before moving data to our unsupervised algorithms, complete the following steps for preparing data:
+
+
 Unsupervised learning is used in one of the following two ways:
 
 ## Preprocess data for unsupervised learning.
@@ -70,38 +83,7 @@ Eigenvectors and eigenvalues show us the spread of the dataset and by how much.
 + ### eigenvalue are the magnitude that each of these stretches.
 The higher eigenvalue is the axis that carries the most amount of information. The Final data points will give us a table of two columns. Ultimately, just reducing dimensions yet still keeping the values.
 
-
-
-### Challenges of Unsupervised Learning
-
-Recall that unsupervised learning does not take in any pairing of input and outcomes from the data—it only looks at the data as a whole. This can cause some challenges when running the algorithm. Since we won’t know the outcome it’s predicting, we might not know that the result is correct.
-
-This can lead to issues where we’re trying to decide if the model has provided any helpful information that we can use to make decisions in the real world. For example, our store owner might run a model that ends up grouping the type of people by how much they’re buying. This could be useful in some contexts—for example, knowing who the top spenders are—but it might not help the store owner better organize the store for maximum purchases per person, or understand the differences in product preferences between top purchasers.
-
-The only way to determine what an unsupervised algorithm did with the data is to go through it manually or create visualizations. Since there will be a manual aspect, unsupervised learning is great for when you want to explore the data. Sometimes you’ll use the information provided to you by the unsupervised algorithm to transition to a more targeted, supervised model.
-
-As with supervised learning, data should be preprocessed into a correct format with only numerical values, null value determination, and so forth. The only difference is unsupervised learning doesn’t have a target variable—it only has input features that will be used to find patterns in the data. It’s important to carefully select features that could help to find those patterns or create groups.
-
-Before moving data to our unsupervised algorithms, complete the following steps for preparing data:
-
-### Data selection
-### Data processing
-### Data transformation
-
-### Clustering is a type of unsupervised learning that groups data points together. This group of data points is called a cluster.
-
-###K-means Algorithm
-K-means is an unsupervised learning algorithm used to identify and solve clustering issues.
-
-K represents how many clusters there will be. These clusters are then determined by the means of all the points that will belong to the cluster.
-
-The K-means algorithm groups the data into K clusters, where belonging to a cluster is based on some similarity or distance measure to a centroid.
-### Data Preprocessing
-### Clustering and the K-means Algorithm 
-### Using the Elbow Curve to Find Centroids 
-### Managing Data Features 
-### Hierarchical Clustering 
-### Challenge 
+## Challenge 
 
 ## Background
 Martha is a senior manager for the Advisory Services Team at Accountability Accounting, one of your most important clients. Accountability Accounting, a prominent investment bank, is interested in offering a new cryptocurrencies investment portfolio for its customers. The company, however, is lost in the immense universe of cryptocurrencies and asks you to present a report of what cryptocurrencies are on the trading market and how cryptocurrencies could be grouped toward creating a classification for developing this new investment product.
