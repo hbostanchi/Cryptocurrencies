@@ -83,9 +83,7 @@ Eigenvectors and eigenvalues show us the spread of the dataset and by how much.
 + ### eigenvalue are the magnitude that each of these stretches.
 The higher eigenvalue is the axis that carries the most amount of information. The Final data points will give us a table of two columns. Ultimately, just reducing dimensions yet still keeping the values.
 
-## Challenge 
-
-## Background
+## Challenge Background
 Martha is a senior manager for the Advisory Services Team at Accountability Accounting, one of your most important clients. Accountability Accounting, a prominent investment bank, is interested in offering a new cryptocurrencies investment portfolio for its customers. The company, however, is lost in the immense universe of cryptocurrencies and asks you to present a report of what cryptocurrencies are on the trading market and how cryptocurrencies could be grouped toward creating a classification for developing this new investment product.
 
 The data Martha will be working with is not ideal, so it will be processed to fit the machine learning models. Since there is no known output for what Martha is looking for, she decided to use unsupervised learning. To group the cryptocurrencies, Martha decided on a clustering algorithm to help determine about investing in this product. She’ll use data visualizations to share her findings with the board.
