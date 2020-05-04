@@ -83,18 +83,20 @@ Eigenvectors and eigenvalues show us the spread of the dataset and by how much.
 + ### eigenvalue are the magnitude that each of these stretches.
 The higher eigenvalue is the axis that carries the most amount of information. The Final data points will give us a table of two columns. Ultimately, just reducing dimensions yet still keeping the values.
 
-## Challenge Background
-Martha is a senior manager for the Advisory Services Team at Accountability Accounting, one of your most important clients. Accountability Accounting, a prominent investment bank, is interested in offering a new cryptocurrencies investment portfolio for its customers. The company, however, is lost in the immense universe of cryptocurrencies and asks you to present a report of what cryptocurrencies are on the trading market and how cryptocurrencies could be grouped toward creating a classification for developing this new investment product.
-
-The data Martha will be working with is not ideal, so it will be processed to fit the machine learning models. Since there is no known output for what Martha is looking for, she decided to use unsupervised learning. To group the cryptocurrencies, Martha decided on a clustering algorithm to help determine about investing in this product. She’ll use data visualizations to share her findings with the board.
 
 #### Challenge Overview
-In this challenge, we use unsupervised learning to analyze data on the cryptocurrencies traded on the market. We present a report of what cryptocurrencies are on the trading market and how cryptocurrencies could be grouped toward creating a classification for developing a new investment product. The data we work with is not ideal, so we process it to fit the machine learning models. Since there is no known output for what we are looking for, we decided to use unsupervised learning. To group the cryptocurrencies, we decided on a clustering algorithm to help determine about investing in this product. We used data visualizations to share our findings.
+The senior manager for the Advisory Services Team at Accountability Accounting is looking for help with a report of what cryptocurrencies are on the market and how they could be grouped. Because of the data available, it was decided that unsupervised machine learning would be best to create classifications. For the report, the following tasks were completed.
 
-## Objectives
--	Import, analyze, clean, and preprocess a “real-world” classification dataset.
--	Select, design, and train a binary classification model of your choosing.
--	Optimize model training and input data to achieve desired model performance.
+Prepare the data for dimension reduction and clustering.
+Reduce data dimensions using PCA from sklearn.
+Predict clusters using the K-means algorithm from sklearn.
+Create 2D and 3D scatter plots and a data table to present the results.
+
+## Resources
+Data source: 
+Cryptocurrency data [crypto_data.csv](https://github.com/hbostanchi/Cryptocurrencies/blob/master/challenge/crypto_data.csv)
+Software: Python 3.7 using libraries: Pandas, Scikit-learn, hvplot and Plotly Express; Jupyter Notebook
+
 
 ## Challenge Summary
 ### Data Preprocessing
@@ -137,36 +139,10 @@ Create a scatter plot using hvplot.scatter to present the clustered data about c
 ## Objectives
 The goals for this challenge are for you to:
 
-Prepare the data for dimensions reduction with PCA and clustering using K-means.
-Reduce data dimensions using PCA algorithms from sklearn.
-Predict clusters using cryptocurrencies data using the K-means algorithm form sklearn.
-Create some plots and data tables to present your results.
-
-## Instructions
-Begin by downloading the CSV you need to complete the challenge.
-
-Cryptocurrency data [crypto_data.csv](https://github.com/hbostanchi/Cryptocurrencies/blob/master/challenge/crypto_data.csv)
-
-### Data Preprocessing
-In this section, you have to load the information about cryptocurrencies from the provided CSV file and perform some data preprocessing tasks. The data was retrieved from CryptoCompare (Links to an external site.).
-
-Start by loading the data in a Pandas DataFrame named “crypto_df.” Continue with the following data preprocessing tasks:
-
-Remove all cryptocurrencies that aren’t trading.
-Remove all cryptocurrencies that don’t have an algorithm defined.
-Remove the IsTrading column.
-Remove all cryptocurrencies with at least one null value.
-Remove all cryptocurrencies without coins mined.
-Store the names of all cryptocurrencies on a DataFramed named coins_name, and use the crypto_df.index as the index for this new DataFrame.
-Remove the CoinName column.
-Create dummies variables for all of the text features, and store the resulting data on a DataFrame named X.
-Use the StandardScaler from sklearn (Links to an external site.) to standardize all of the data from the X DataFrame. Remember, this is important prior to using PCA and K-means algorithms.
-Reducing Data Dimensions Using PCA
-Use the PCA algorithm from sklearn (Links to an external site.) to reduce the dimensions of the X DataFrame down to three principal components.
-
-Once you have reduced the data dimensions, create a DataFrame named “pcs_df” that includes the following columns: PC 1, PC 2, and PC 3. Use the crypto_df.index as the index for this new DataFrame.
-
-You should have a DataFrame like the following:
+- Prepare the data for dimensions reduction with PCA and clustering using K-means.
+- Reduce data dimensions using PCA algorithms from sklearn.
+= Predict clusters using cryptocurrencies data using the K-means algorithm form sklearn.
+- Create some plots and data tables to present your results.
 
 
 ### Clustering Cryptocurrencies Using K-means
