@@ -88,6 +88,52 @@ Martha is a senior manager for the Advisory Services Team at Accountability Acco
 
 The data Martha will be working with is not ideal, so it will be processed to fit the machine learning models. Since there is no known output for what Martha is looking for, she decided to use unsupervised learning. To group the cryptocurrencies, Martha decided on a clustering algorithm to help determine about investing in this product. She’ll use data visualizations to share her findings with the board.
 
+#### Challenge Overview
+In this challenge, we use unsupervised learning to analyze data on the cryptocurrencies traded on the market. We present a report of what cryptocurrencies are on the trading market and how cryptocurrencies could be grouped toward creating a classification for developing a new investment product. The data we work with is not ideal, so we process it to fit the machine learning models. Since there is no known output for what we are looking for, we decided to use unsupervised learning. To group the cryptocurrencies, we decided on a clustering algorithm to help determine about investing in this product. We used data visualizations to share our findings.
+
+## Objectives
+-	Import, analyze, clean, and preprocess a “real-world” classification dataset.
+-	Select, design, and train a binary classification model of your choosing.
+-	Optimize model training and input data to achieve desired model performance.
+
+## Challenge Summary
+### Data Preprocessing
+In this section, we had to load the information about cryptocurrencies from the provided CSV file and perform some data preprocessing tasks. The data was retrieved from CryptoCompare
+
+We started by loading the data in a Pandas DataFrame named [“crypto_df”](https://github.com/hbostanchi/Cryptocurrencies/blob/master/challenge/Crypto_challenge.ipynb) and continued with the following data preprocessing tasks:
+
+- Remove all cryptocurrencies that aren’t trading.
+- Remove the IsTrading column.
+- Remove all cryptocurrencies with at least one null value.
+- Remove all cryptocurrencies without coins mined.
+- Store the names of all cryptocurrencies on a DataFramed named coins_name, and use the crypto_df.index as the index for this new DataFrame.
+- Remove the CoinName column.
+- Create dummies variables for all of the text features, and store the resulting data on a DataFrame named X.
+- Use the StandardScaler from sklearn to standardize all of the data from the X DataFrame.
+
+### Reducing Data Dimensions Using PCA
+We used the [PCA algorithm from sklearn](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html) to reduce the dimensions of the X DataFrame down to three principal components.
+
+Once we had reduced the data dimensions, we created a DataFrame named “pcs_df” that includes the following columns:
+
+- PC 1
+- PC 2
+- PC 3
+We used the crypto_df.index as the index for this new DataFrame.
+
+Clustering Cryptocurrencies Using K-means
+We used the [KMeans algorithm from sklearn](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html) to cluster the cryptocurrencies using the PCA data.
+
+Create an elbow curve to find the best value for K, and use the pcs_df DataFrame.
+Once you define the best value for K, run the K-means algorithm to predict the K clusters for the cryptocurrencies’ data. Use the pcs_df to run the K-means algorithm.
+Create a new DataFrame named “clustered_df,” that includes the following columns: Algorithm, ProofType, TotalCoinsMined, TotalCoinSupply, PC 1, PC 2, PC 3, CoinName, and Class.
+Visualizing Results
+We created data visualizations to present the final results.
+
+Create a 3D scatter plot using Plotly Express to plot the clusters using the clustered_df DataFrame. You should include the following parameters on the plot: hover_name="CoinName" and hover_data=["Algorithm"] to show this additional info on each data point.
+Use hvplot.table to create a data table with all the current tradable cryptocurrencies. The table should have the following columns: CoinName, Algorithm, ProofType, TotalCoinSupply, TotalCoinsMined, and Class.
+Create a scatter plot using hvplot.scatter to present the clustered data about cryptocurrencies having x="TotalCoinsMined" and y="TotalCoinSupply" to contrast the number of available coins versus the total number of mined coins. Use the hover_cols=["CoinName"] parameter to include the cryptocurrency name on each data point.
+
 ## Objectives
 The goals for this challenge are for you to:
 
