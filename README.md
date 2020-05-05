@@ -84,7 +84,7 @@ Eigenvectors and eigenvalues show us the spread of the dataset and by how much.
 The higher eigenvalue is the axis that carries the most amount of information. The Final data points will give us a table of two columns. Ultimately, just reducing dimensions yet still keeping the values.
 
 
-#### Challenge Overview
+# Challenge Overview
 The senior manager for the Advisory Services Team at Accountability Accounting is looking for help with a report of what cryptocurrencies are on the market and how they could be grouped. Because of the data available, it was decided that unsupervised machine learning would be best to create classifications. For the report, the following tasks were completed.
 
 Prepare the data for dimension reduction and clustering.
@@ -99,6 +99,14 @@ Software: Python 3.7 using libraries: Pandas, Scikit-learn, hvplot and Plotly Ex
 
 
 ## Challenge Summary
+
+## Objectives
+The goals for this challenge are for you to:
+
+- Prepare the data for dimensions reduction with PCA and clustering using K-means.
+- Reduce data dimensions using PCA algorithms from sklearn.
+= Predict clusters using cryptocurrencies data using the K-means algorithm form sklearn.
+- Create some plots and data tables to present your results.
 ### Data Preprocessing
 In this section, we had to load the information about cryptocurrencies from the provided CSV file and perform some data preprocessing tasks. The data was retrieved from CryptoCompare
 
@@ -129,30 +137,7 @@ We used the [KMeans algorithm from sklearn](https://scikit-learn.org/stable/modu
 Create an elbow curve to find the best value for K, and use the pcs_df DataFrame.
 Once you define the best value for K, run the K-means algorithm to predict the K clusters for the cryptocurrencies’ data. Use the pcs_df to run the K-means algorithm.
 Create a new DataFrame named “clustered_df,” that includes the following columns: Algorithm, ProofType, TotalCoinsMined, TotalCoinSupply, PC 1, PC 2, PC 3, CoinName, and Class.
-Visualizing Results
-We created data visualizations to present the final results.
-
-Create a 3D scatter plot using Plotly Express to plot the clusters using the clustered_df DataFrame. You should include the following parameters on the plot: hover_name="CoinName" and hover_data=["Algorithm"] to show this additional info on each data point.
-Use hvplot.table to create a data table with all the current tradable cryptocurrencies. The table should have the following columns: CoinName, Algorithm, ProofType, TotalCoinSupply, TotalCoinsMined, and Class.
-Create a scatter plot using hvplot.scatter to present the clustered data about cryptocurrencies having x="TotalCoinsMined" and y="TotalCoinSupply" to contrast the number of available coins versus the total number of mined coins. Use the hover_cols=["CoinName"] parameter to include the cryptocurrency name on each data point.
-
-## Objectives
-The goals for this challenge are for you to:
-
-- Prepare the data for dimensions reduction with PCA and clustering using K-means.
-- Reduce data dimensions using PCA algorithms from sklearn.
-= Predict clusters using cryptocurrencies data using the K-means algorithm form sklearn.
-- Create some plots and data tables to present your results.
-
-
-### Clustering Cryptocurrencies Using K-means
-You’ll use the KMeans algorithm from sklearn (Links to an external site.) to cluster the cryptocurrencies using the PCA data.
-
-Complete the following tasks:
-
-Create an elbow curve to find the best value for K, and use the pcs_df DataFrame.
-Once you define the best value for K, run the K-means algorithm to predict the K clusters for the cryptocurrencies’ data. Use the pcs_df to run the K-means algorithm.
-Create a new DataFrame named “clustered_df,” that includes the following columns: Algorithm, ProofType, TotalCoinsMined, TotalCoinSupply, PC 1, PC 2, PC 3, CoinName, and Class. You should maintain the index of the crypto_df DataFrames as is shown below:
+You should maintain the index of the crypto_df DataFrames as is shown below:
  The DataFrame shows nine columns: Algorithm, ProofType, TotalCoinsMined, TotalCoinSupply, PC1, PC 2, PC 3, CoinName, and Class. It contains ten rows with the following headings: 42, 404, 1337, BTC, ETH, LTC, DASH, XMR, ETC, and ZEC.
 
 ### Visualizing Results
