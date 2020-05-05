@@ -1,28 +1,21 @@
 # Cryptocurrencies
 
-## Challenge Overview
-The senior manager for the Advisory Services Team at Accountability Accounting is looking for help with a report of what cryptocurrencies are on the market and how they could be grouped. Because of the data available, it was decided that unsupervised machine learning would be best to create classifications. For the report, the following tasks were completed.
+## Challenge Summary
+The senior manager for the Advisory Services Team at Accountability Accounting is looking for help with a report of what cryptocurrencies are on the market and how they could be grouped. Because of the data available, it was decided that unsupervised machine learning would be best to create classifications.
 
-Prepare the data for dimension reduction and clustering.
-Reduce data dimensions using PCA from sklearn.
-Predict clusters using the K-means algorithm from sklearn.
-Create 2D and 3D scatter plots and a data table to present the results.
+## Objectives
+The goals for this challenge are for you to:
+
+- Prepare the data for dimension reduction and clustering.
+- Reduce data dimensions using PCA from sklearn.
+- Predict clusters using the K-means algorithm from sklearn.
+- Create 2D and 3D scatter plots and a data table to present the results.
 
 ## Resources
 Data source: 
 Cryptocurrency data [crypto_data.csv](https://github.com/hbostanchi/Cryptocurrencies/blob/master/challenge/crypto_data.csv)
 Software: Python 3.7 using libraries: Pandas, Scikit-learn, hvplot and Plotly Express; Jupyter Notebook
 
-
-## Challenge Summary
-
-## Objectives
-The goals for this challenge are for you to:
-
-- Prepare the data for dimensions reduction with PCA and clustering using K-means.
-- Reduce data dimensions using PCA algorithms from sklearn.
-= Predict clusters using cryptocurrencies data using the K-means algorithm form sklearn.
-- Create some plots and data tables to present your results.
 ### Data Preprocessing
 In this section, we had to load the information about cryptocurrencies from the provided CSV file and perform some data preprocessing tasks. The data was retrieved from CryptoCompare
 
@@ -53,7 +46,8 @@ We used the [KMeans algorithm from sklearn](https://scikit-learn.org/stable/modu
 Create an elbow curve to find the best value for K, and use the pcs_df DataFrame.
 Once you define the best value for K, run the K-means algorithm to predict the K clusters for the cryptocurrencies’ data. Use the pcs_df to run the K-means algorithm.
 
-he data was cleaned, scaled with StandardScaler and reduced to three principal components using PCA.
+## Summary of Results
+the data was cleaned, scaled with StandardScaler and reduced to three principal components using PCA.
 
 - The elbow curve showed a prominent bend at k = 4, so the K-means algorithm was run with 4 clusters.
 
