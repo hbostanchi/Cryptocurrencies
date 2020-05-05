@@ -141,13 +141,13 @@ he data was cleaned, scaled with StandardScaler and reduced to three principal c
 
 - The elbow curve showed a prominent bend at k = 4, so the K-means algorithm was run with 4 clusters.
 
-[elbow curve](https://github.com/hbostanchi/Cryptocurrencies/blob/master/challenge/image/Elbow_curve.png)!
+![elbow curve](https://github.com/hbostanchi/Cryptocurrencies/blob/master/challenge/image/Elbow_curve.png)
 
 - Most cryptocurrencies fit into two of the four clusters.
 - Bittorrent had such large numbers, that it is in its own cluster.
 - The table shows available cryptocurrencies; table is sortable and selectable.
 
-[table](https://github.com/hbostanchi/Cryptocurrencies/blob/master/challenge/image/table.png)!
+![table](https://github.com/hbostanchi/Cryptocurrencies/blob/master/challenge/image/table.png)
 
 
 Create a new DataFrame named “clustered_df,” that includes the following columns: Algorithm, ProofType, TotalCoinsMined, TotalCoinSupply, PC 1, PC 2, PC 3, CoinName, and Class.
@@ -161,12 +161,12 @@ Complete the following tasks:
 
 Create a 3D scatter plot using Plotly Express to plot the clusters using the clustered_df DataFrame. You should include the following parameters on the plot: hover_name="CoinName" and hover_data=["Algorithm"] to show this additional info on each data point.
 
-[3D scatter plot](https://github.com/hbostanchi/Cryptocurrencies/blob/master/challenge/image/3D%20scatter%20plot.png)!
+![3D scatter plot](https://github.com/hbostanchi/Cryptocurrencies/blob/master/challenge/image/3D%20scatter%20plot.png)
 
 Use hvplot.table to create a data table with all the current tradable cryptocurrencies. The table should have the following columns: CoinName, Algorithm, ProofType, TotalCoinSupply, TotalCoinsMined, and Class.
 Create a scatter plot using hvplot.scatter to present the clustered data about cryptocurrencies having x="TotalCoinsMined" and y="TotalCoinSupply" to contrast the number of available coins versus the total number of mined coins. Use the hover_cols=["CoinName"] parameter to include the cryptocurrency name on each data point.
 
-[scatterplot](https://github.com/hbostanchi/Cryptocurrencies/blob/master/challenge/image/scatterplot.png)!
+![scatterplot](https://github.com/hbostanchi/Cryptocurrencies/blob/master/challenge/image/scatterplot.png)
 
 ## Submission
 Make sure your repo is up to date and includes the following:
