@@ -168,9 +168,4 @@ Create a scatter plot using hvplot.scatter to present the clustered data about c
 
 ![scatterplot](https://github.com/hbostanchi/Cryptocurrencies/blob/master/challenge/image/scatterplot.png)
 
-## Submission
-Make sure your repo is up to date and includes the following:
 
-A README.md file containing a short description of your project.
-A Jupyter Notebook with all of your code.
-Submit the link to your repository through Canvas.
