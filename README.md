@@ -13,8 +13,8 @@ The goals for this challenge are for you to:
 
 ## Resources
 Data source: 
-Cryptocurrency data [crypto_data.csv](https://github.com/hbostanchi/Cryptocurrencies/blob/master/challenge/crypto_data.csv)
-Software: Python 3.7 using libraries: Pandas, Scikit-learn, hvplot and Plotly Express; Jupyter Notebook
+- Cryptocurrency data [crypto_data.csv](https://github.com/hbostanchi/Cryptocurrencies/blob/master/challenge/crypto_data.csv)
+- Software: Python 3.7 using libraries: Pandas, Scikit-learn, hvplot and Plotly Express; Jupyter Notebook
 
 ### Data Preprocessing
 In this section, we had to load the information about cryptocurrencies from the provided CSV file and perform some data preprocessing tasks. The data was retrieved from CryptoCompare
